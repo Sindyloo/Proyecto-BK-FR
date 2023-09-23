@@ -1,0 +1,45 @@
+.modal-actions {
+  padding-top: 20px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-p {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.btn-p:hover {
+  background-color: #0069d9;
+  cursor: pointer;
+}
+
+.mat-stroked-button {
+  border: 1px solid black;
+  color: #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-right: 8px;
+  min-width: 100px;
+}
+
+.mat-stroked-button:hover {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+.modal-actions {
+  padding: 10px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}

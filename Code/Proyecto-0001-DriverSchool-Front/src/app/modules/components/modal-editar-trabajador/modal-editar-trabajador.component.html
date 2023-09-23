@@ -1,0 +1,32 @@
+<h1 [align]="'center'" mat-dialog-title class="modal-title">Editar Trabajador</h1>
+<div mat-dialog-content>
+  <form [formGroup]="form" (keydown.enter)="$event.preventDefault()">
+    <div class="row">
+      <!-- <mat-form-field class="col-lg-4" appearance="outline">
+        <mat-label>Puesto</mat-label>
+        <input required formControlName="puesto" matInput maxlength="100">
+      </mat-form-field>
+      <mat-form-field class="col-lg-4" appearance="outline">
+        <mat-label>Salario</mat-label>
+        <input required formControlName="salario" matInput maxlength="100">
+      </mat-form-field>
+      <mat-form-field class="col-lg-4" appearance="outline">
+        <mat-label>Nombre Completo</mat-label>
+        <input required formControlName="nombre" matInput maxlength="100">
+      </mat-form-field>
+      <mat-form-field class="col-lg-4" appearance="outline">
+        <mat-label>Edad</mat-label>
+        <input required formControlName="edad" matInput maxlength="100">
+      </mat-form-field> -->
+      <mat-form-field class="col-lg-4" appearance="outline">
+        <mat-label>Nombre usuario</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </div>
+  </form>
+</div>
+
+<div mat-dialog-action [align]="'end'" class="modal-actions">
+  <button mat-flat-button class="btn-p mr-8">Guardar</button>
+  <button mat-stroked-button mat-dialog-close>Cerrar</button>
+</div>

@@ -1,0 +1,42 @@
+<div class="content-container">
+<h1 [align]="'center'">Listado de trabajadores</h1>
+<div class="button-container">
+  <button mat-flat-button class="custom-button">
+    <mat-icon>add</mat-icon> Agregar Nuevo
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Puesto</th>
+        <th>Salario</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Nombre Usuario</th>
+        <th>Fecha Registro</th>
+        <th>Fecha Modificación</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let item of trabajadores; let index = index">
+        <tr>
+          <td>{{ item.puesto }}</td>
+          <td>{{ item.salario }}</td>
+          <td>{{ item.nombre }}</td>
+          <td>{{ item.edad }}</td>
+          <td>{{ item.nombreUsuario }}</td>
+          <td>{{ item.fechaCreacion | date : 'dd-MM-yyyy' }}</td>
+          <td>{{ item.fechaModificacion | date : 'dd-MM-yyyy' }}</td>
+          <td class="actions-column">
+            <button mat-icon-button (click)="editarTrabajador()"><mat-icon>edit</mat-icon></button>
+            <button mat-icon-button><mat-icon>delete</mat-icon></button>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
+</div>
